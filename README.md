@@ -2,6 +2,8 @@
 
 Here are the explanation of the program which I made. How it works.
 
+I make the program using JAVA and tool that I used is Eclipse
+
 The csv reader read the file and I stored in hashmap like way:
 
 the content of the file like:
