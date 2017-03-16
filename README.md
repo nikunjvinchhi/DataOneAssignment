@@ -1,1 +1,45 @@
 # DataOneAssignment
+
+Here are the explanation of the program which I made. How it works.
+
+The csv reader read the file and I stored in hashmap like way:
+
+the content of the file like:
+1, 4.00, teddy_bear
+1, 8.00, baby_powder
+2, 5.00, teddy_bear
+2, 6.50, baby_powder
+3, 4.00, pampers_diapers
+3, 8.00, johnson_wipes
+4, 5.00, johnson_wipes
+4, 2.50, cotton_buds
+5, 4.00, bath_towel
+5, 8.00, scissor
+6, 5.00, scissor
+6, 6.00, bath_towel, cotton_balls, powder_puff
+
+
+So at the scanning time I made 2 hashmap price and product_map.
+the price hashmap contain the price, product vise means
+(key,value)=(1,12)
+(key,value)=(2,11.5)
+(key,value)=(3,12)
+(key,value)=(4,7)
+
+like wise..
+
+and the 2nd hashmap product_map have
+(key,value)=(1,teddy_bear,baby_powder)
+(key,value)=(2,teddy_powder,baby_powder)
+
+like wise upto total product.
+
+After that I create final hashmap means mapping of all 3 using above 2 hashmap and that hashmap(temp) contain value like this:
+
+(key,value)=(1,teddy_bear,baby_powder 12)
+(key,value)=(2,teddy_powder,baby_powder 11.5)
+
+like wise
+After the scanning now we find the minimum cost and product id. for that 
+customer product that are looking for store in userProduct (teddy_bear,baby_powder) after that it will search in temp hashmap.
+and store the cost value and compare with min_cost if it's less then then we can update our min_cost and update our product id.
